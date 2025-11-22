@@ -1,19 +1,21 @@
-
+import iphone17ProIntro from "../../src/assets/iphone-17-pro-intro.mp4"
+import iphone17Video from "../../src/assets/iphone-17-video.mp4"
+import iphoneBackgroundMobile from "../../public/img/iphone-background-mobile.jpg"
 
 function Hero() {
 
     return (
         <section className="relative h-screen overflow-hidden bg-black">
             <div className="absolute top-18 bottom-0 right-0 left-0 z-0">
-                <video className="w-full h-full object-cover" autoPlay muted loop src="../../src/assets/iphone-17-pro-intro.mp4"></video>
+                <video className="w-full h-full object-cover" autoPlay muted loop src={iphone17ProIntro}></video>
             </div>
 
             <div className="absolute top-18 bottom-0 right-0 left-0 z-1">
-                <video className="block md:hidden w-full h-full object-cover" autoPlay muted loop src="../../src/assets/iphone-17-video.mp4"></video>
+                <video className="block md:hidden w-full h-full object-cover" autoPlay muted loop src={iphone17Video}></video>
             </div>
 
             <div className="absolute top-18 bottom-0 right-0 left-0 z-2">
-                <img src="../../public/img/iphone-background-mobile.jpg" className="block sm:hidden w-full h-full object-cover" alt="iphone-17-pro"></img>
+                <img src={iphoneBackgroundMobile} className="block sm:hidden w-full h-full object-cover" alt="iphone-17-pro"></img>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80"></div>
             </div>
 
